@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     // MARK: Outlets
     
     @IBOutlet weak var colorView: UIView!
-//    @IBOutlet weak var redControl: UISwitch!
-//    @IBOutlet weak var greenControl: UISwitch!
-//    @IBOutlet weak var blueControl: UISwitch!
+    @IBOutlet weak var redControl: UISlider!
+    @IBOutlet weak var greenControl: UISlider!
+    @IBOutlet weak var blueControl: UISlider!
     
     // MARK: Life Cycle
     

@@ -42,6 +42,9 @@
                                                             </label>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="djC-q0-TsC">
                                                                 <rect key="frame" x="114" y="8" width="112" height="31"/>
+                                                                <connections>
+                                                                    <action selector="changeColorComponent" destination="BYZ-38-t0r" eventType="valueChanged" id="uSs-bI-vKM"/>
+                                                                </connections>
                                                             </slider>
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -62,6 +65,9 @@
                                                             </label>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aub-4M-0oc">
                                                                 <rect key="frame" x="114" y="8" width="112" height="22"/>
+                                                                <connections>
+                                                                    <action selector="changeColorComponent" destination="BYZ-38-t0r" eventType="valueChanged" id="yi4-mE-1ws"/>
+                                                                </connections>
                                                             </slider>
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -82,6 +88,9 @@
                                                             </label>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HWZ-3v-PAQ">
                                                                 <rect key="frame" x="114" y="8" width="112" height="22"/>
+                                                                <connections>
+                                                                    <action selector="changeColorComponent" destination="BYZ-38-t0r" eventType="valueChanged" id="5no-YM-Y93"/>
+                                                                </connections>
                                                             </slider>
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -142,7 +151,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="blueControl" destination="HWZ-3v-PAQ" id="UA4-nA-xcZ"/>
                         <outlet property="colorView" destination="eFw-ro-4F9" id="4vw-QX-fBl"/>
+                        <outlet property="greenControl" destination="aub-4M-0oc" id="wYW-W8-9ej"/>
+                        <outlet property="redControl" destination="djC-q0-TsC" id="zBP-fx-kgq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
