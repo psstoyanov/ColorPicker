@@ -44,6 +44,9 @@
                                                     <constraint firstAttribute="width" constant="49" id="hrL-vb-2o8"/>
                                                 </constraints>
                                                 <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="changeColorComponent" destination="BYZ-38-t0r" eventType="valueChanged" id="1M2-Ik-sdg"/>
+                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0O-k6-Hj3">
                                                 <rect key="frame" x="17" y="73" width="73" height="21"/>
@@ -62,6 +65,9 @@
                                                     <constraint firstAttribute="height" constant="31" id="GvI-gy-k1h"/>
                                                     <constraint firstAttribute="width" constant="49" id="ao8-BU-ByS"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="changeColorComponent" destination="BYZ-38-t0r" eventType="valueChanged" id="FwR-Hm-ffZ"/>
+                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75z-qH-y1k">
                                                 <rect key="frame" x="17" y="124" width="73" height="21"/>
@@ -77,6 +83,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6FO-hv-BM4">
                                                 <rect key="frame" x="111" y="119" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="changeColorComponent" destination="BYZ-38-t0r" eventType="valueChanged" id="iSn-3W-M09"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -121,7 +130,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.82284245466321249" green="0.82284245466321249" blue="0.82284245466321249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="5Dr-e4-5LG" secondAttribute="centerX" id="UrK-mb-RDk"/>
                                     <constraint firstAttribute="centerX" secondItem="L8T-uA-xbS" secondAttribute="centerX" id="jNA-ay-yLm"/>
@@ -139,6 +148,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blueControl" destination="6FO-hv-BM4" id="31Q-GL-t6T"/>
+                        <outlet property="colorView" destination="eFw-ro-4F9" id="4vw-QX-fBl"/>
+                        <outlet property="greenControl" destination="lcj-Hg-4tv" id="bi1-tN-QEV"/>
+                        <outlet property="redControl" destination="e5h-Ud-kbq" id="WBP-3v-2S3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
